@@ -1,3 +1,5 @@
+const { Map } = require('immutable');
+
 //index.js
 const app = getApp()
 
@@ -11,6 +13,14 @@ Page({
   },
 
   onLoad: function() {
+    // wx.request({
+    //   url: 'https://example.com/ajax?dataType=member',
+    //   dataType: 'json',
+    //   success(res) {
+    //     console.log(res)
+    //   }
+    // })
+
     // 获取用户信息
     wx.getSetting({
       success: res => {
