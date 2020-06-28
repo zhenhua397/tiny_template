@@ -1,4 +1,5 @@
 const { Map } = require('immutable');
+import { getData, postData } from "../../utils/request";
 
 //index.js
 const app = getApp()
@@ -13,13 +14,9 @@ Page({
   },
 
   onLoad: function() {
-    // wx.request({
-    //   url: 'https://example.com/ajax?dataType=member',
-    //   dataType: 'json',
-    //   success(res) {
-    //     console.log(res)
-    //   }
-    // })
+    getData('/api/v2/banners').then(res => {
+      
+    }).catch(err => {})
 
     // 获取用户信息
     wx.getSetting({
