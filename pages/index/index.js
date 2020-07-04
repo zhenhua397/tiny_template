@@ -13,10 +13,10 @@ Page({
     requestResult: ''
   },
 
-  onLoad: function() {
-    getData('/api/v2/banners').then(res => {
-      
-    }).catch(err => {})
+  onLoad: function () {
+    getData('/banners').then(res => {
+
+    }).catch(err => { })
 
     // 获取用户信息
     wx.getSetting({
@@ -36,7 +36,7 @@ Page({
     })
   },
 
-  onGetUserInfo: function(e) {
+  onGetUserInfo: function (e) {
     // if (!this.data.logged && e.detail.userInfo) {
     //   this.setData({
     //     logged: true,

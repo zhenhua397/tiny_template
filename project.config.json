@@ -1,5 +1,4 @@
 {
-	"miniprogramRoot": "src/",
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
@@ -32,7 +31,6 @@
 	"libVersion": "2.8.1",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
-	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
 	"condition": {
 		"search": {
 			"current": -1,
